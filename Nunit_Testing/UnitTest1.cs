@@ -14,7 +14,6 @@ namespace Nunit_Testing
 
         {
             Assert.AreEqual(result, CalApp.Addition(v1, v2));
-
         }
 
         [TestCase(2, 7, 14)]
@@ -22,7 +21,6 @@ namespace Nunit_Testing
         [TestCase(6, 6, 36)]
         public void Multiplication_Test(double v1, double v2, double result)
         {
-
             Assert.AreEqual(result, CalApp.Multiplication(v1, v2));
         }
 

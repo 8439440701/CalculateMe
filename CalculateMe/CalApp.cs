@@ -48,6 +48,7 @@ namespace CalculateMe
                     Console.WriteLine("INVALID VALUE! try again");
                     break;
             }
+
             Console.WriteLine("The result is {0}", result);
             Console.ReadKey();
         }
@@ -68,7 +69,7 @@ namespace CalculateMe
         }
         public static double Division(double v1, double v2)
         {
-            return v1 / v2;
+            return v1 * v2; //Adding Mutant
         }
 
     }
