@@ -4,7 +4,7 @@ using CalculateMe;
 namespace Nunit_Testing
 {
     [TestFixture]
-    public class Tests
+    public class Tests //for mutation testing//
     {
 
         [TestCase(2, 7, 9)]
