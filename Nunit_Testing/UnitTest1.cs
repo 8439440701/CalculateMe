@@ -4,7 +4,7 @@ using CalculateMe;
 namespace Nunit_Testing
 {
     [TestFixture]
-    public class Tests
+    public class Tests //for mutation testing//
     {
 
         [TestCase(2, 7, 9)]
@@ -14,7 +14,6 @@ namespace Nunit_Testing
 
         {
             Assert.AreEqual(result, CalApp.Addition(v1, v2));
-
         }
 
         [TestCase(2, 7, 14)]
@@ -22,7 +21,6 @@ namespace Nunit_Testing
         [TestCase(6, 6, 36)]
         public void Multiplication_Test(double v1, double v2, double result)
         {
-
             Assert.AreEqual(result, CalApp.Multiplication(v1, v2));
         }
 
@@ -37,6 +35,9 @@ namespace Nunit_Testing
         [TestCase(35, 7, 5)]
         [TestCase(-40, 8, -5)]
         [TestCase(-50, -5, 10)]
+        [TestCase(1, 3, 0.3)]
+        [TestCase(2, 1, 2)]
+        [TestCase(9, 3, 3)]
         public void Division_Test10(double v1, double v2, double result)
         {
             Assert.AreEqual(result, CalApp.Division(v1, v2));
