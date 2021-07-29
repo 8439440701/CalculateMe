@@ -35,9 +35,9 @@ namespace Nunit_Testing
         [TestCase(35, 7, 5)]
         [TestCase(-40, 8, -5)]
         [TestCase(-50, -5, 10)]
-        [TestCase(1, 3, 0.3)]
-        [TestCase(2, 1, 2)]
-        [TestCase(9, 3, 3)]
+        [TestCase(1, 3, 0.3)]//New Testcase after adding mutant
+        [TestCase(2, 1, 2)]]//New Testcase after adding mutant
+        [TestCase(9, 3, 3)]]//New Testcase after adding mutant
         public void Division_Test10(double v1, double v2, double result)
         {
             Assert.AreEqual(result, CalApp.Division(v1, v2));
